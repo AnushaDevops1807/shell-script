@@ -2,7 +2,7 @@
 
 # check if correct number of arguments is provided
 if ["$#" -ne 3]; then
-    echo "Usage: $0 anusha.txt hello hi"
+    echo "Usage: $0 <anusha.txt> <hello> <hi>"
     exit 1
 
 fi
