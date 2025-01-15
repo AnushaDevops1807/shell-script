@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# check if correct number of arguments is provided
-if ["$#" -ne 3]; then
-    echo "Usage: $0 <anusha.txt> <hello> <hi>"
-    exit 1
+#  check if correct number of arguments is provided
+# if ["$#" -ne 3]; then
+#     echo "Usage: $0 <anusha.txt> <hello> <hi>"
+#     exit 1
 
-fi
+# fi
 
 # Assign input arguments to variables
 
