@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # check if correct number of arguments is provided
 if ["$#" -ne 3]; then
