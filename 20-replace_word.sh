@@ -22,4 +22,4 @@ fi
 # perform the word replacement and save changes in-place
 sed -i "/s\b/$OLD_WORD\b/$NEW_WORD/g" "$FILENAME"
 
-echo "Replaced all occurences of '$OLD_WORD' with '$NEW_WORD in 'FILENAME'."
+echo "Replaced all occurences of '$OLD_WORD' with '$NEW_WORD' in 'FILENAME'."
