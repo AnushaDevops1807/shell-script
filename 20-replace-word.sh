@@ -9,7 +9,7 @@
 
 # Assign input arguments to variables
 
-FILENAME="file.txt"
+FILENAME="file"
 OLD_WORD="hello"
 NEW_WORD="hi"
 
