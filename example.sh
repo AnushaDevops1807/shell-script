@@ -1,4 +1,4 @@
 #!/bin/bash
 
-echo "First argument: $1"
-echo "Second argument: $2"
+echo -e "First argument: $1"
+echo -e "Second argument: $2"
