@@ -9,17 +9,21 @@
 
 # Assign input arguments to variables
 
-FILENAME="file.txt"
-OLD_WORD="hello"
-NEW_WORD="hi"
+# FILENAME="file.txt"
+# OLD_WORD="hello"
+# NEW_WORD="hi"
 
-# check if file exists
-if [ ! -f "FILENAME" ]; then
-    echo "Error: File '$FILENAME' not found"
-    exit 1
-fi
+read -p "Enter the file name : " file
+read -p "Enter the old word to be replaced : " old
+read -p "Enter the new word to be replaced : " new
+
+# # check if file exists
+# if [ ! -f "FILENAME" ]; then
+#     echo "Error: File '$FILENAME' not found"
+#     exit 1
+# fi
 
 # perform the word replacement and save changes in-place
 sed -i '/s\b$OLD_WORD\b/$NEW_WORD/g' file.txt
 
-echo "Replaced all occurences of '$OLD_WORD' with '$NEW_WORD' in 'FILENAME';"
+echo "Replaced all occurences of '$old' with '$new' in 'File';"
