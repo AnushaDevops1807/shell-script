@@ -9,7 +9,7 @@
 
 # Assign input arguments to variables
 
-FILENAME="file"
+FILENAME="file.txt"
 OLD_WORD="hello"
 NEW_WORD="hi"
 
@@ -20,6 +20,6 @@ if [ ! -f "FILENAME" ]; then
 fi
 
 # perform the word replacement and save changes in-place
-sed -i "/s\b$OLD_WORD\b/$NEW_WORD/g" "$FILENAME"
+sed -i '/s\b$OLD_WORD\b/$NEW_WORD/g' file.txt
 
 echo "Replaced all occurences of '$OLD_WORD' with '$NEW_WORD' in 'FILENAME';"
