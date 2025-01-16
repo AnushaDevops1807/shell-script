@@ -24,6 +24,6 @@ read -p "Enter the new word to be replaced : " new
 # fi
 
 # perform the word replacement and save changes in-place
-sed -i '/s\b$OLD_WORD\b/$NEW_WORD/g' file.txt
+sed -i '/s\b/old\b/new/g' file.txt
 
 echo "Replaced all occurences of 'old' with 'new' in 'File';"
