@@ -9,9 +9,9 @@
 
 # Assign input arguments to variables
 
-FILENAME=$1
-OLD_WORD=$2
-NEW_WORD=$3
+FILENAME="file.txt"
+OLD_WORD="hello"
+NEW_WORD="hi"
 
 # check if file exists
 if [ ! -f "FILENAME" ]; then
