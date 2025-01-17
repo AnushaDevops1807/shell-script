@@ -25,7 +25,7 @@ fi
 # 7. Display the top 10 words.
 tr '[:upper:]' '[:lower:]' < "$FILE" | \    
 tr -c '[:alnum:]' '[\n*]' | \               
-sort | \   #Group identical words together
-uniq -c | \  #count the occurences of words
-sort -nr | \   #Order the output in descending numerical order
-head -n 10     #DIsplay top 10 words
+sort | \   
+uniq -c | \  
+sort -nr | \   
+head -n 10     
