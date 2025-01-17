@@ -24,8 +24,8 @@ fi
 # 6. Sort by frequency in descending order
 # 7. Display the top 10 words.
 tr '[:upper:]' '[:lower:]' < "$FILE" | \
-tr -c '[:alnum:]' '[\n*]' | \          
-sort | \   
-uniq -c | \  
-sort -nr | \   
-head -n 10     
+tr -c '[:alnum:]' '[\n*]' | \   
+sort | \
+uniq -c | \
+sort -nr | \
+head -n 10   
