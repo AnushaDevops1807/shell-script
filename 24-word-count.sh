@@ -25,7 +25,7 @@ fi
 # 7. Display the top 10 words.
 tr '[:upper:]' '[:lower:]' < "$FILE" | \
 tr -c '[:alnum:]' '[\n*]' | \
-sort | \
+# sort | \
 uniq -c | \
 sort -nr | \
 head -n 10
