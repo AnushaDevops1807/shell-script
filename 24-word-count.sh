@@ -23,7 +23,7 @@ fi
 # 5. Count occurences with 'uniq -c'.
 # 6. Sort by frequency in descending order
 # 7. Display the top 10 words.
-tr '[:upper:]' '[:lower:]' < "$FILE" | \    #Convert upper case to lower case.
+tr '[:upper:]' '[:lower:]' < "$FILE" | \    #Convert upper case to lower case
 tr -c '[:alnum:]' '[\n*]' | \               #Convert punctuations and special characters in spaces
 sort | \   #Group identical words together
 uniq -c | \  #count the occurences of words
