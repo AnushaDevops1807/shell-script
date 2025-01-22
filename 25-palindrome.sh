@@ -21,6 +21,8 @@ if [[ ! -f "$file" ]]; then
     exit 1
 fi
 
+echo "Processing file: $file"
+
 # process the file to find palindromic words
 grep -oE '\b\w+\b' "$file" | tr '[:upper:]' '[:lower:]' | while read -r word; do
     is_palindrome "$word"
