@@ -1,7 +1,7 @@
 #!/bin/bash
 
  check if correct number of arguments is provided
-if ["$#" -ne 3]; then
+if [[ $# -ne 3 ]]; then
     echo "Usage: $0 <anusha.txt> <hello> <hi>"
     exit 1
 

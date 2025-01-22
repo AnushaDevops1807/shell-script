@@ -30,3 +30,9 @@ grep -oE '\b\w+\b' "$file" | tr '[:upper:]' '[:lower:]' | while read -r word; do
     is_palindrome "$word"
 done | sort -u     
      
+
+ #  grep -oE '\b\w+\b'  --> Extract all the words from the given file.
+ #  tr '[:upper:]' '[:lower:]'  ---> Convert upper case to lower case
+ #  is_palindrome function : checks if a word is same when reversed
+ #  sort -u ---> Ensures that output contains unique palindromic words in  sorted order
+ #  Processing file --> Add a debug line in the script to print the file path, This will confirm script is receiving the correct file path
