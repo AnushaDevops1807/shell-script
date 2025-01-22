@@ -16,7 +16,7 @@ if [[ $# -ne 1 ]]; then
     exit 1
 fi
 
-if [[ ! -f "$file"]]; then
+if [[ ! -f "$file" ]]; then
     echo "File not found: $file"
     exit 1
 fi
