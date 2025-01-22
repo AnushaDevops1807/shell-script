@@ -25,6 +25,6 @@ fi
 echo "Processing file: $file"
 
 # perform the word replacement and save changes in-place
-sed -i '/s\b/old\b/new/g' $file
+sed -i "s/\b/$old\b/$new/g" $file
 
 echo "Replaced all occurences of '$old' with '$new' in '$file'."
