@@ -16,13 +16,13 @@ if [[ $# -ne 1 ]]; then
     exit 1
 fi
 
-if [[! -f "$file"]]; then
+if [[ ! -f "$file"]]; then
     echo "File not found: $file"
     exit 1
 fi
 
 # process the file to find palindromic words
-grep -oE '\b\w+\b' "$file" | tr ' [:upper:]' '[:lower:]' | while read -r word; do
+grep -oE '\b\w+\b' "$file" | tr '[:upper:]' '[:lower:]' | while read -r word; do
     is_palindrome "$word"
 done | sort -u     
      

@@ -1,9 +1,9 @@
 Level
-radar
-civic
+Radar
+Civic
 deified
-madam
-refer
-rotor
-wow
-noon
+Madam
+Refer
+Rotor
+Wow
+Noon
