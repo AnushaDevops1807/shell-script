@@ -23,6 +23,6 @@ if [ ! -f "file" ]; then
 fi
 
 # perform the word replacement and save changes in-place
-sed -i '/s\b/old\b/new/g' file.txt
+sed -i '/s\b/old\b/new/g' $file
 
 echo "Replaced all occurences of 'old' with 'new' in 'File';"
