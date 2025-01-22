@@ -12,7 +12,7 @@ is_palindrome() {
 
 # check if the file is provided and exists
 if [[ $# -ne 1 ]]; then
-    echo "Usage: $0 <path-to-text-file>"
+    echo "Usage: $0 /home/ec2-user/shell-scirpt/palindrome.txt"
     exit 1
 fi
 
