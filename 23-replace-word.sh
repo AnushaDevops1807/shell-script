@@ -18,7 +18,7 @@ OLD_WORD="$2"
 NEW_WORD="$3"
 # # check if file exists
 if [ ! -f "$file" ]; then
-    echo "Error: File '$file' not found"
+    echo "File not found: $file"
     exit 1
 fi
 
