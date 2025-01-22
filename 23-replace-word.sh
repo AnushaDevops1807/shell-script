@@ -9,13 +9,10 @@ fi
 
 # Assign input arguments to variables
 
-# file="file.txt"
-# OLD_WORD="hello"
-# NEW_WORD="hi"
-
 file="$1"
 old="$2"
 new="$3"
+
 # # check if file exists
 if [ ! -f "$file" ]; then
     echo "File not found: $file"
@@ -28,3 +25,6 @@ echo "Processing file: $file"
 sed -i "s/\b$old\b/$new/g" "$file"
 
 echo "Replaced all occurences of '$old' with '$new' in '$file'."
+
+
+ # Processing file --> Add a debug line in the script to print the file path, This will confirm script is receiving the correct file path
