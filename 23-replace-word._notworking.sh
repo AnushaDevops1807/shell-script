@@ -1,6 +1,6 @@
 #!/bin/bash
 
- check if correct number of arguments is provided
+#check if correct number of arguments is provided
 if [[ $# -ne 3 ]]; then
     echo "Usage: $0 /home/ec2-user/shell-script/file.txt hello hi"
     exit 1
