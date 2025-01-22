@@ -13,11 +13,11 @@ fi
 # OLD_WORD="hello"
 # NEW_WORD="hi"
 
-file="$1"
+FILE="$1"
 OLD_WORD="$2"
 NEW_WORD="$3"
 # # check if file exists
-if [ ! -f "file" ]; then
+if [ ! -f "$file" ]; then
     echo "Error: File '$file' not found"
     exit 1
 fi
