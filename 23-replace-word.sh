@@ -2,7 +2,7 @@
 
 #check if correct number of arguments is provided
 if [[ $# -ne 3 ]]; then
-    echo "Usage: $0 /home/ec2-user/shell-script/file.txt hello hi"
+    echo "Usage: $0 file.txt hello hi"
     exit 1
 
 fi
@@ -13,9 +13,9 @@ fi
 # OLD_WORD="hello"
 # NEW_WORD="hi"
 
-FILE="$1"
-OLD_WORD="$2"
-NEW_WORD="$3"
+file="$1"
+old="$2"
+new="$3"
 # # check if file exists
 if [ ! -f "$file" ]; then
     echo "File not found: $file"
