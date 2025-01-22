@@ -2,26 +2,24 @@
 
  check if correct number of arguments is provided
 if [[ $# -ne 3 ]]; then
-    echo "Usage: $0 <anusha.txt> <hello> <hi>"
+    echo "Usage: $0 /home/ec2-user/shell-script/file.txt hello hi"
     exit 1
 
 fi
 
 # Assign input arguments to variables
 
-# FILENAME="file.txt"
-# OLD_WORD="hello"
-# NEW_WORD="hi"
+file="file.txt"
+OLD_WORD="hello"
+NEW_WORD="hi"
 
-read -p "Enter the file name : " file
-read -p "Enter the old word to be replaced : " old
-read -p "Enter the new word to be replaced : " new
+file="$1"
 
 # # check if file exists
-# if [ ! -f "FILENAME" ]; then
-#     echo "Error: File '$FILENAME' not found"
-#     exit 1
-# fi
+if [ ! -f "file" ]; then
+    echo "Error: File '$file' not found"
+    exit 1
+fi
 
 # perform the word replacement and save changes in-place
 sed -i '/s\b/old\b/new/g' file.txt
