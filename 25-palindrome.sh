@@ -3,7 +3,7 @@
 
 is_palindrome() {
     local word="$1"
-    local reversed="${echo "$word" | rev}"
+    local reversed="$(echo "$word" | rev)"
     if [[ "$word" == "$reversed" ]]; then
          echo "$word"
 
